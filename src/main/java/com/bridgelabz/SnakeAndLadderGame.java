@@ -40,7 +40,7 @@ public class SnakeAndLadderGame {
     }
     public static void main(String[] args) {
 
-        while ( getUserPosition() <= Win_Point )
+        while ( getUserPosition() != Win_Point )
         {
             int numberOnDice=rollDice();
             int option= playerOption();
@@ -55,13 +55,22 @@ public class SnakeAndLadderGame {
             }
             else if (option == LDDER)
             {
-                setUserPosition(getUserPosition()+rollDice());
+                if (getUserPosition()+rollDice() > 100)
+                {
+                    setUserPosition(getUserPosition());
+                }
+                else
+                {
+                    setUserPosition(getUserPosition()+rollDice());
+                }
+
             }
             else if (option == SNAKE)
             {
                 setUserPosition(getUserPosition()-rollDice());
             }
 
+            System.out.println(getUserPosition());
         }
 
     }
