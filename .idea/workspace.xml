@@ -126,4 +126,9 @@
     </task>
     <servers />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SANKE_AND_LADDER_PROBLEM$SnakeAndLadderGame.ic" NAME="SnakeAndLadderGame Coverage Results" MODIFIED="1621508477942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bridgelabz.*</FILTER>
+    </SUITE>
+  </component>
 </project>

@@ -3,7 +3,6 @@ package com.bridgelabz;
 import java.util.Random;
 
 public class SnakeAndLadderGame {
-
     //Constant
     final static int START_POSITION=0;
     final static int NUMBER_OF_PLAYER=1;
@@ -38,7 +37,10 @@ public class SnakeAndLadderGame {
         int option=randomNumber.nextInt(3)+1;
         return option;
     }
+
     public static void main(String[] args) {
+    //variable
+        int numberOfThrownDice=0;
 
         while ( getUserPosition() != Win_Point )
         {
@@ -70,8 +72,9 @@ public class SnakeAndLadderGame {
                 setUserPosition(getUserPosition()-rollDice());
             }
 
-            System.out.println(getUserPosition());
+            System.out.println(" Times of Dice Thrown : " + numberOfThrownDice + " Position of User :" +getUserPosition());
         }
+        System.out.println("Total number of dice thrown by Player to Win :" +numberOfThrownDice);
 
     }
 }
